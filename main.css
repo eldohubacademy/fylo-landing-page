@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+h1,
+h2,
+h3,
+header,
+form {
+  font-family: "Raleway", sans-serif;
+}
+main,
+footer {
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header nav a {
+  color: hsl(238, 22%, 44%);
+  text-decoration: none;
+  padding: 10px;
+}
+header nav a:visited {
+  color: green;
+}
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header,
+section,
+footer {
+  padding: 15px 50px;
+  display: flex;
+}
+.section-image img {
+  width: 100%;
+}
+
+#intro {
+  align-items: center;
+}
+
+form input {
+  padding: 7px 12px;
+}
+::placeholder {
+  color: hsl(0, 0%, 75%);
+}
+form input[type="submit"] {
+  background-color: hsl(224, 93%, 58%);
+  border: none;
+  padding: 7px 25px;
+  color: white;
+  font-weight: bold;
+  margin-left: 30px;
+  cursor: pointer;
+}
+/* pseudo classses - help style elements in diff states */
+form input[type="submit"]:hover {
+  filter: brightness(130%);
+  transform: scale(1.15);
+}
+form input[type="email"]:focus {
+  outline-color: red;
+  border: none;
+}
+
+#productive {
+  background-color: hsl(240, 75%, 98%);
+}
+#curved-bg {
+  background-image: url("./images/bg-curve-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 80px;
+}
+#early-access {
+  background-color: hsl(238, 22%, 44%);
+  color: white;
+}
