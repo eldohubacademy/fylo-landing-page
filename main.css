@@ -81,3 +81,98 @@ form input[type="email"]:focus {
   background-color: hsl(238, 22%, 44%);
   color: white;
 }
+
+#productive .section-text > a {
+  color: hsl(170, 45%, 43%);
+}
+#productive .section-text > a:hover {
+  filter: brightness(113%);
+}
+
+#card {
+  background-color: white;
+  padding: 18px;
+  margin-top: 20px;
+  border-radius: 5px;
+  width: 60%;
+  box-shadow: 0px 0px 10px hsl(238, 22%, 44%);
+}
+
+#profile {
+  display: flex;
+  gap: 16px;
+}
+#profile > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+#profile p {
+  margin: 0;
+}
+#profile p:first-child {
+  font-weight: bold;
+}
+/* block and inline elements */
+/* block elements occupy full width of the parent element e.g. h1-h6, p,section, main, div .... */
+/* inline elements only ocuppy as much width as its content e.g. b, i, span, a*/
+
+/* inline-block --- img ,  */
+
+#early-access > * {
+  /* width: 50%; */
+  flex: 1;
+}
+#early-access form input[type="email"] {
+  display: block;
+  width: 70%;
+  margin-bottom: 8px;
+}
+#early-access form input[type="submit"] {
+  margin: 0;
+}
+
+footer {
+  background-color: hsl(243, 87%, 12%);
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+footer > div {
+  flex: 1;
+}
+footer a {
+  display: block;
+  text-decoration: none;
+  color: hsl(240, 75%, 98%);
+  margin-bottom: 10px;
+}
+/* MOBILE DESIGN -- Responsive design  */
+
+/* media queries - allow defining styles for specific devices */
+
+@media (max-width: 600px) {
+  #intro,
+  #productive {
+    flex-direction: column-reverse;
+  }
+  #early-access {
+    flex-direction: column;
+  }
+  form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  footer {
+    flex-direction: column;
+  }
+  header img {
+    height: 20px;
+  }
+  header,
+  section,
+  footer {
+    padding: 15px 20px;
+  }
+}
+ 
